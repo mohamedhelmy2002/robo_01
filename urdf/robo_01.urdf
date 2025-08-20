@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="robo_01">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-0.030554 -0.0020654 0.0085173"
+        rpy="0 0 0" />
+      <mass
+        value="20" />
+      <inertia
+        ixx="0.079061"
+        ixy="-9.9573E-06"
+        ixz="0.0042593"
+        iyy="0.1981"
+        iyz="7.0455E-09"
+        izz="0.23657" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file://$(find robo_01)/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file://$(find robo_01)/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="right_front">
+    <inertial>
+      <origin
+        xyz="5.15214867563563E-06 2.80805972016629E-06 0.0337922644753644"
+        rpy="0 0 0" />
+      <mass
+        value="6.42319431070558" />
+      <inertia
+        ixx="0.0130390760088297"
+        ixy="8.51655669675138E-08"
+        ixz="9.55153693948409E-07"
+        iyy="0.0130389692399972"
+        iyz="5.22556739163657E-07"
+        izz="0.0230881977578827" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file://$(find robo_01)/meshes/right_front.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file://$(find robo_01)/meshes/right_front.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_front"
+    type="continuous">
+    <origin
+      xyz="0.38685 0.3475 -0.1747"
+      rpy="-1.5708 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="right_front" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="left_front">
+    <inertial>
+      <origin
+        xyz="1.87073752871969E-06 5.56148974717452E-06 -0.0337922626518681"
+        rpy="0 0 0" />
+      <mass
+        value="6.4231949475297" />
+      <inertia
+        ixx="0.0130389455455732"
+        ixy="6.02263331491273E-08"
+        ixz="-3.48757224097471E-07"
+        iyy="0.0130391019146355"
+        iyz="-1.03138377495761E-06"
+        izz="0.0230881994874909" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file://$(find robo_01)/meshes/left_front.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file://$(find robo_01)/meshes/left_front.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_front"
+    type="continuous">
+    <origin
+      xyz="0.38685 -0.34975 -0.1747"
+      rpy="-1.5708 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="left_front" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="left_back">
+    <inertial>
+      <origin
+        xyz="8.76574344665926E-07 -5.80184896512015E-06 0.0337922644753188"
+        rpy="0 0 0" />
+      <mass
+        value="6.42319431072147" />
+      <inertia
+        ixx="0.0130389272179774"
+        ixy="-2.99575328167907E-08"
+        ixz="1.6436090614628E-07"
+        iyy="0.0130391232677392"
+        iyz="-1.07627579710779E-06"
+        izz="0.02308820301495" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file://$(find robo_01)/meshes/left_back.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file://$(find robo_01)/meshes/left_back.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_back"
+    type="continuous">
+    <origin
+      xyz="-0.38685 -0.34975 -0.1747"
+      rpy="1.5708 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="left_back" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="right_back">
+    <inertial>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <mass
+        value="0" />
+      <inertia
+        ixx="0"
+        ixy="0"
+        ixz="0"
+        iyy="0"
+        iyz="0"
+        izz="0" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file://$(find robo_01)/meshes/right_back.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="file://$(find robo_01)/meshes/right_back.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_back"
+    type="continuous">
+    <origin
+      xyz="-0.38685 0.3475 -0.1747"
+      rpy="-1.5708 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="right_back" />
+    <axis
+      xyz="0 0 -1" />
+  </joint>
+</robot>

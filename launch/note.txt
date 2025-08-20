@@ -1,0 +1,2 @@
+to launch the rvize 
+:ros2 launch robo_01 launch_robo01.launch.py 

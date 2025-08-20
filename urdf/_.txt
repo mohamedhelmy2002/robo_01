@@ -1,0 +1,4 @@
+<mesh filename="file://$(find robo_01)/meshes/xxx_xxx.STL"/>
+mmh@mmh:~/colcon_ws$ ros2 launch urdf_tutorial display.launch.py model:=/home/mmh/colcon_ws/src/robo_01/urdf/robo_01.urdf
+
+you have to copy the mesh file to  ls /home/mmh/colcon_ws/install/robo_01/share/robo_01/meshes/ 
